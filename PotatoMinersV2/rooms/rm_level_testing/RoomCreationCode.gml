@@ -1,0 +1,2 @@
+// Randomize the seed
+randomize();
