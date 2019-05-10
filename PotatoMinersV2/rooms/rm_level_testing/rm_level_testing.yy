@@ -13,9 +13,35 @@
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Items",
+            "id": "2ea23603-e43b-4972-969b-e8650c3a2483",
+            "depth": 0,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "UI",
             "id": "d6281355-efa5-43d7-9a17-76162fec2b17",
-            "depth": 0,
+            "depth": 100,
             "grid_x": 8,
             "grid_y": 8,
             "hierarchyFrozen": false,
@@ -41,7 +67,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Entities",
             "id": "8bd3c588-bee0-4a8f-9653-47bd6b125710",
-            "depth": 100,
+            "depth": 200,
             "grid_x": 8,
             "grid_y": 8,
             "hierarchyFrozen": false,

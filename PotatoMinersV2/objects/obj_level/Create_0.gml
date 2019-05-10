@@ -4,7 +4,7 @@ genStage = 0;
 currentOreTile = choose(5, 5, 5, 6, 6, 7);
 oreChunkSize = 5;
 
-oreAmount = 1//750;
+oreAmount = 750;
 
 tileSize = 8; // Size of a single tile in pixels
 gridSize = round(room_width div tileSize); // The size of both the width and height of the grid
@@ -17,7 +17,7 @@ tileMap = layer_tilemap_create(tileLayer, 0, 0, ts_sand, gridSize, gridSize); //
 gridStart = 1; // The cell where the playable grid starts (everything outside of the playable grid is wall)
 gridEnd = gridSize - 2; // The cell where the playable grid ends
 
-levelSize = 1//1250; // The amount of steps the level with take to generate
+levelSize = 1250; // The amount of steps the level with take to generate
 
 cavingChance = 25;
 
