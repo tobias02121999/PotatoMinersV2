@@ -9,7 +9,7 @@ switch (state)
 		scr_player_build();
 		scr_player_lantern();
 		scr_player_support();
-		scr_player_enemy();
+		scr_player_bomb();
 		scr_player_move();
 		scr_player_turn();
 		scr_player_animate();

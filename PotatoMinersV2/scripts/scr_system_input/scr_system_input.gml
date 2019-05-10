@@ -25,6 +25,6 @@ switch (inputScheme)
 		iLantern = keyboard_check_pressed(vk_control);
 		iSupport = keyboard_check_pressed(vk_shift);
 		
-		iEnemy = keyboard_check_pressed(vk_tab);
+		iBomb = keyboard_check_pressed(vk_tab);
 		break;
 }

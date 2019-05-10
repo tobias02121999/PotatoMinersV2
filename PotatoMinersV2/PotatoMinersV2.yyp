@@ -191,14 +191,6 @@
             }
         },
         {
-            "Key": "370d128a-c29a-46d0-93eb-fac33619adc1",
-            "Value": {
-                "id": "00fe6f11-2987-4863-9a0d-dda8afe42d3c",
-                "resourcePath": "objects\\obj_pathfinding\\obj_pathfinding.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "43356211-fd0b-488d-bc58-6eb94eda7680",
             "Value": {
                 "id": "410830fd-b42d-4b17-bf80-17388338b087",
@@ -420,6 +412,14 @@
                 "id": "85a45180-81ca-48a3-ac88-33b579d23413",
                 "resourcePath": "objects\\obj_level\\obj_level.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8095e98f-24c6-4a49-924e-2a95fdc13386",
+            "Value": {
+                "id": "7c2e2d90-e65f-4275-b1a2-9fd400d56bf3",
+                "resourcePath": "sprites\\spr_bomb\\spr_bomb.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -650,7 +650,7 @@
             "Key": "bf2a2f72-7b2e-402c-b6ed-50f9055482a7",
             "Value": {
                 "id": "16116ffc-8725-487e-983e-71b2cff2a4fe",
-                "resourcePath": "scripts\\scr_player_enemy\\scr_player_enemy.yy",
+                "resourcePath": "scripts\\scr_player_bomb\\scr_player_bomb.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -807,6 +807,14 @@
             }
         },
         {
+            "Key": "e2db3f57-416c-4f53-95e3-bbf46d1fdb10",
+            "Value": {
+                "id": "e6aaeff3-0bb9-42e9-b216-e2ac552b6e69",
+                "resourcePath": "objects\\obj_bomb\\obj_bomb.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e2fcb01c-8af8-4659-9e22-8d8eff12a2ea",
             "Value": {
                 "id": "3630d784-32ba-4367-8975-b32763f985a4",
@@ -924,8 +932,8 @@
         "4f8835bd-9328-43f3-82ac-086c8cbe4c0a",
         "aadfd70b-80b0-4a7a-97c6-5bd42459d2de",
         "60964aff-d19c-4ea4-9d2e-8d25ce195f2a",
-        "f25de8ad-9cd1-4faf-81f1-7692b5ba7a51",
         "52cc9bfc-8bd1-4150-a288-79979e5f9530",
+        "f25de8ad-9cd1-4faf-81f1-7692b5ba7a51",
         "62506321-e282-4d86-bd02-0f0c5bb6c4be",
         "67fdaef0-0d84-4c25-b232-edfc3ebc3fda"
     ],
