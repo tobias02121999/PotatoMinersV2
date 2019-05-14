@@ -15,3 +15,8 @@ stone = 0;
 iron = 0;
 gold = 0;
 diamond = 0;
+spawnX = x;
+spawnY = y;
+
+// Instantiate the spawn shield
+instance_create_layer(x - (obj_level.tileSize / 2), (y - (obj_level.tileSize / 2)) - obj_level.tileSize, "System", obj_shield);

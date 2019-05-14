@@ -12,7 +12,7 @@ gridSize = round(room_width div tileSize); // The size of both the width and hei
 depth = 200; // Set the depth of the level tiles
 
 tileLayer = layer_create(depth); // Create the tile layer
-tileMap = layer_tilemap_create(tileLayer, 0, 0, ts_sand, gridSize, gridSize); // Create the tilemap
+tileMap = layer_tilemap_create(tileLayer, 0, 0, ts_blocks, gridSize, gridSize); // Create the tilemap
 
 gridStart = 1; // The cell where the playable grid starts (everything outside of the playable grid is wall)
 gridEnd = gridSize - 2; // The cell where the playable grid ends
@@ -20,6 +20,7 @@ gridEnd = gridSize - 2; // The cell where the playable grid ends
 levelSize = 1250; // The amount of steps the level with take to generate
 
 cavingChance = 25;
+lavaChance = 25;
 
 // Randomize the location of the level object
 x = round(random_range(gridStart, gridEnd)) * tileSize;

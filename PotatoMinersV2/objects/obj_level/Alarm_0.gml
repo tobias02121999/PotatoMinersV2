@@ -52,8 +52,8 @@ switch (genStage)
 		// Place a tile
 		scr_level_placeTile(gridPosX, gridPosY, 1, 2); // Floor tiles
 
-		var rand = round(random_range(0, cavingChance));
-		if (rand == 0)
+		var caving = round(random_range(0, cavingChance));
+		if (caving == 0)
 		{
 			// Randomize the location of the level object
 			scr_level_randomizePos();
@@ -64,6 +64,10 @@ switch (genStage)
 			// Randomize the unique tile ID of the current tile
 			scr_level_placeTile(gridPosX, gridPosY, 1, 2); // Floor tiles
 		}
+		
+		var lava = round(random_range(0, lavaChance));
+		if (lava == 0)
+			instance_create_layer(x, y, "Items", obj_lava);
 		
 		levelSize--; // Reduce the current level size
 

@@ -31,6 +31,15 @@ if (surface_exists(surface))
 		draw_circle((x + (obj_level.tileSize / 2)) + random_range(-1, 1), (y + (obj_level.tileSize / 2)) + random_range(-1, 1), 38 + random_range(-1, 1), false);
 	}
 	
+	with (obj_lava)
+	{	
+		draw_set_alpha(.5);
+		draw_circle((x + (obj_level.tileSize / 2)) + random_range(-1, 1), (y + (obj_level.tileSize / 2)) + random_range(-1, 1), 18 + random_range(-1, 1), false);
+	
+		draw_set_alpha(.25);
+		draw_circle((x + (obj_level.tileSize / 2)) + random_range(-1, 1), (y + (obj_level.tileSize / 2)) + random_range(-1, 1), 23 + random_range(-1, 1), false);
+	}
+	
 	gpu_set_blendmode(bm_normal);
 	draw_set_alpha(1);
 	

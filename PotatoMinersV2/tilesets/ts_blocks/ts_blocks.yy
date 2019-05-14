@@ -2,7 +2,7 @@
     "id": "dc918a04-225c-4af4-b5fa-64e80057b76e",
     "modelName": "GMTileSet",
     "mvc": "1.11",
-    "name": "ts_sand",
+    "name": "ts_blocks",
     "auto_tile_sets": [
         
     ],
@@ -24,28 +24,53 @@
         "AnimationCreationOrder": null,
         "FrameData": [
             0,
+            0,
+            1,
             1,
             2,
+            2,
+            3,
             3,
             4,
+            4,
+            5,
             5,
             6,
+            6,
             7,
+            7,
+            8,
             8,
             9,
             10,
+            10,
+            9,
+            11,
             11,
             12,
+            12,
+            13,
             13,
             14,
+            14,
+            15,
             15
         ],
-        "SerialiseFrameCount": 1
+        "SerialiseFrameCount": 2
     },
     "tile_animation_frames": [
-        
+        {
+            "id": "816fb0c9-94ba-4cc3-bebe-76cebfe42ea6",
+            "modelName": "GMTileAnimation",
+            "mvc": "1.0",
+            "frames": [
+                9,
+                10
+            ],
+            "name": "lava"
+        }
     ],
-    "tile_animation_speed": 15,
+    "tile_animation_speed": 2,
     "tile_count": 16,
     "tileheight": 8,
     "tilehsep": 0,
