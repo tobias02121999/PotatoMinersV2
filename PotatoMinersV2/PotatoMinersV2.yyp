@@ -455,14 +455,6 @@
             }
         },
         {
-            "Key": "85ed5b1f-fdec-40cf-8d47-176cc051413d",
-            "Value": {
-                "id": "22ee1196-1d90-43e5-9ec3-4a5b71e5fdf5",
-                "resourcePath": "objects\\obj_slime\\obj_slime.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "875080a9-b7e5-426f-b15d-b58577ef379b",
             "Value": {
                 "id": "5fbfb404-3d2d-4c44-9900-443c0ab2afdf",

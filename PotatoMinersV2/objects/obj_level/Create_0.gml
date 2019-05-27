@@ -20,7 +20,7 @@ gridEnd = gridSize - 2; // The cell where the playable grid ends
 levelSize = 1250; // The amount of steps the level with take to generate
 
 cavingChance = 25;
-lavaChance = 25;
+lavaChance = 250000000;
 
 // Randomize the location of the level object
 x = round(random_range(gridStart, gridEnd)) * tileSize;
