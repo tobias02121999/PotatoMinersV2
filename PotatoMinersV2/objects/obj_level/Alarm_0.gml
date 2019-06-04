@@ -95,6 +95,7 @@ else
 	instance_create_layer((posX + 4) * tileSize, posY * tileSize, "Items", obj_vendor_support);
 			
 	instance_create_layer((posX + 3) * tileSize, (posY + 2) * tileSize, "Items", obj_lantern);
-			
-	instance_create_layer(x + tileSize / 2, y + tileSize / 2, "Entities", obj_player);
+	
+	instance_create_layer(x + tileSize / 2, y + tileSize / 2, "Entities", obj_player_0);
+	if (multiplayer) instance_create_layer(x + tileSize / 2, y + tileSize / 2, "Entities", obj_player_1);
 }

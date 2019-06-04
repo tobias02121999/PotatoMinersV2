@@ -1,4 +1,5 @@
 // Initialize the level variables
+multiplayer = true;
 genStage = 0;
 
 currentOreTile = choose(5, 5, 5, 6, 6, 7);

@@ -18,5 +18,10 @@ diamond = 0;
 spawnX = x;
 spawnY = y;
 
+iCursorX = x;
+iCursorY = y;
+
+cursor = obj_cursor;
+
 // Instantiate the spawn shield
 instance_create_layer(x - (obj_level.tileSize / 2), (y - (obj_level.tileSize / 2)) - obj_level.tileSize, "System", obj_shield);

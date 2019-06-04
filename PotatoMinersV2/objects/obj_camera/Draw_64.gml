@@ -1,4 +1,4 @@
-// 
+/*
 draw_sprite(spr_border, 0, 0, 0);
 
 if (instance_exists(obj_player))
@@ -13,3 +13,4 @@ if (instance_exists(obj_player))
 	draw_text_transformed(16, 240, "Gold: " + string(obj_player.gold), 2, 2, 0);
 	draw_text_transformed(16, 272, "Diamond: " + string(obj_player.diamond), 2, 2, 0);
 }
+*/
