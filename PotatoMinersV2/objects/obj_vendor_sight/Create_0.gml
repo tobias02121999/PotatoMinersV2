@@ -3,4 +3,4 @@ event_inherited();
 
 // Initialize the vendor variables
 vendorScript = scr_vendor_sight;
-originalCost = 20;
+originalCost = 25;

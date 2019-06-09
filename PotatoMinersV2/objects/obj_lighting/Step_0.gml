@@ -15,7 +15,7 @@ if (surface_exists(surface))
 
 	with (obj_player)
 	{
-		var size = obj_player.sight * obj_level.tileSize;
+		var size = sight * obj_level.tileSize;
 	
 		draw_set_alpha(1);
 		draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), (size * .75) + random_range(-1, 1), false);

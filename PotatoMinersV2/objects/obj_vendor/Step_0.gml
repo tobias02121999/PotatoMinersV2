@@ -13,7 +13,7 @@ if (place_meeting(x, y, obj_cursor) && !activated && player.iMine)
 	}
 }
 
-if (!place_meeting(x, y, obj_cursor))
+if (!player.iMine)
 	activated = false;
 	
 selected = (place_meeting(x, y, obj_cursor))

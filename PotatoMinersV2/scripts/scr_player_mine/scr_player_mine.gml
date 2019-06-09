@@ -5,7 +5,7 @@ if (iMine && cursor.inRange)
 		(cursor.gridPosY >= obj_level.gridStart && cursor.gridPosY <= obj_level.gridEnd) &&
 		obj_level.tileID[cursor.gridPosX, cursor.gridPosY] >= 3)
 	{
-		if (pickaxe >= obj_level.tileID[cursor.gridPosX, cursor.gridPosY] - 2)
+		if (pickaxe >= obj_level.tileID[cursor.gridPosX, cursor.gridPosY] - 3 && obj_level.tileID[cursor.gridPosX, cursor.gridPosY] != 4)
 		{
 			switch (obj_level.tileID[cursor.gridPosX, cursor.gridPosY] - 3)
 			{

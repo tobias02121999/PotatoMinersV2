@@ -32,6 +32,8 @@ switch (inputScheme)
 		
 		iCursorX = window_view_mouse_get_x(1);
 		iCursorY = window_view_mouse_get_y(1);
+		
+		iShowSheet = keyboard_check(vk_tab);
 		break;
 		
 	// The player 2 (1) input scheme (gamepad)
@@ -53,5 +55,7 @@ switch (inputScheme)
 		
 		iCursorX += gamepad_axis_value(0, gp_axisrh) * sensitivity;
 		iCursorY += gamepad_axis_value(0, gp_axisrv) * sensitivity;
+		
+		iShowSheet = gamepad_button_check(0, gp_select);
 		break;
 }

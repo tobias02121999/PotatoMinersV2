@@ -2,4 +2,4 @@
 event_inherited();
 
 // Update the vendor cost
-cost = originalCost * obj_player.pickaxe;
+cost = originalCost * player.pickaxe;
