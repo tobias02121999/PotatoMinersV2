@@ -1,18 +1,21 @@
 // Store the user input in variables
+var inputScheme = argument0;
+
 switch (inputScheme)
 {
-	// The original (classic) input scheme
+	// The menu input scheme
 	case 0:
-		iTurnLeft = keyboard_check(vk_left);
-		iTurnRight = keyboard_check(vk_right);
-		iTurnUp = keyboard_check(vk_up);
-		iTurnDown = keyboard_check(vk_down);
+		iMenuLeft = keyboard_check(vk_left) || (gamepad_axis_value(0, gp_axislh) < 0);
+		iMenuRight = keyboard_check(vk_right) || (gamepad_axis_value(0, gp_axislh) > 0);
+		iMenuUp = keyboard_check(vk_up) || (gamepad_axis_value(0, gp_axislv) < 0);
+		iMenuDown = keyboard_check(vk_down) || (gamepad_axis_value(0, gp_axislv) > 0);
 		
-		iMove = keyboard_check_pressed(vk_space);
-		iMine = iMove;
+		iMenuConfirm = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1);
+		
+		iMenuPause = keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(0, gp_start);
 		break;
 		
-	// The new experimental input scheme
+	// The player 1 (0) input scheme (keyboard + mouse)
 	case 1:
 		iMoveLeft = keyboard_check(ord("A"));
 		iMoveRight = keyboard_check(ord("D"));
@@ -27,11 +30,11 @@ switch (inputScheme)
 		
 		iBomb = keyboard_check_pressed(vk_tab);
 		
-		iCursorX = mouse_x;
-		iCursorY = mouse_y;
+		iCursorX = window_view_mouse_get_x(1);
+		iCursorY = window_view_mouse_get_y(1);
 		break;
 		
-	// The new second player experimental input scheme
+	// The player 2 (1) input scheme (gamepad)
 	case 2:
 		gamepad_set_axis_deadzone(0, .25); // Set the axis deadzone (threshold)
 		
@@ -40,15 +43,15 @@ switch (inputScheme)
 		iMoveUp = (gamepad_axis_value(0, gp_axislv) < 0);
 		iMoveDown = (gamepad_axis_value(0, gp_axislv) > 0);
 		
-		iMine = (gamepad_axis_value(0, gp_shoulderrb) > 0);
-		iBuild = (gamepad_axis_value(0, gp_shoulderlb) > 0);
+		iMine = gamepad_button_check(0, gp_shoulderrb);
+		iBuild = gamepad_button_check(0, gp_shoulderlb);
 		
 		iLantern = gamepad_button_check_pressed(0, gp_shoulderl);
 		iSupport = gamepad_button_check_pressed(0, gp_shoulderr);
 		
 		iBomb = false;
 		
-		iCursorX += gamepad_axis_value(0, gp_axisrh);
-		iCursorY += gamepad_axis_value(0, gp_axisrv);
+		iCursorX += gamepad_axis_value(0, gp_axisrh) * sensitivity;
+		iCursorY += gamepad_axis_value(0, gp_axisrv) * sensitivity;
 		break;
 }

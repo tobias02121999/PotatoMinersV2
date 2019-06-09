@@ -7,7 +7,7 @@ rotation = 0; // Rotation in degrees (facing direction)
 gridPosX = 0;
 gridPosY = 0;
 coin = 0;
-pickaxe = 0;
+pickaxe = 1;
 sight = 2;
 lanterns = 0;
 supports = 5;
@@ -22,6 +22,8 @@ iCursorX = x;
 iCursorY = y;
 
 cursor = obj_cursor;
+
+sensitivity = 1.5;
 
 // Instantiate the spawn shield
 instance_create_layer(x - (obj_level.tileSize / 2), (y - (obj_level.tileSize / 2)) - obj_level.tileSize, "System", obj_shield);

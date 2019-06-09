@@ -3,7 +3,9 @@ if (surface_exists(surface))
 {
 	surface_set_target(surface);
 
-	draw_set_color(c_black);
+	var color = make_color_rgb(30, 28, 43);
+	
+	draw_set_color(color);
 	draw_set_alpha(1);
 
 	draw_rectangle(0, 0, room_width, room_height, false);
@@ -15,19 +17,19 @@ if (surface_exists(surface))
 	{
 		var size = obj_player.sight * obj_level.tileSize;
 	
-		draw_set_alpha(.75);
+		draw_set_alpha(1);
 		draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), (size * .75) + random_range(-1, 1), false);
 	
-		draw_set_alpha(.25);
+		draw_set_alpha(1);
 		draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), size + random_range(-1, 1), false);
 	}
 
 	with (obj_lantern)
 	{	
-		draw_set_alpha(.5);
+		draw_set_alpha(1);
 		draw_circle((x + (obj_level.tileSize / 2)) + random_range(-1, 1), (y + (obj_level.tileSize / 2)) + random_range(-1, 1), 28 + random_range(-1, 1), false);
 	
-		draw_set_alpha(.25);
+		draw_set_alpha(1);
 		draw_circle((x + (obj_level.tileSize / 2)) + random_range(-1, 1), (y + (obj_level.tileSize / 2)) + random_range(-1, 1), 38 + random_range(-1, 1), false);
 	}
 	

@@ -44,3 +44,7 @@ for (var xx = 0; xx < gridSize; xx++)
 
 generationDuration = 1; // The duration of the generation process
 alarm[0] = generationDuration; // Start the generation alarm
+
+// Initialize the games font
+global.Font = font_add_sprite_ext(spr_font, "0123456789abcdefghijklmnopqrstuvwxyz.", true, 2);
+draw_set_font(global.Font);

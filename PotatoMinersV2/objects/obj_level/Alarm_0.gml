@@ -81,21 +81,15 @@ if (levelSize >= 1)
 	alarm[0] = generationDuration; // Reset the generation alarm
 else
 {
-	var posX = gridPosX - 2;
-	var posY = gridPosY - 2;
-	var width = 5;
-	var height = 4;
-			
-	scr_level_placeTileRect(posX, posY, width, height, 1, 2);
-			
-	instance_create_layer(posX * tileSize, posY * tileSize, "Items", obj_vendor_coin);
-	instance_create_layer((posX + 1) * tileSize, posY * tileSize, "Items", obj_vendor_lantern);
-	instance_create_layer((posX + 2) * tileSize, posY * tileSize, "Items", obj_vendor_pickaxe);
-	instance_create_layer((posX + 3) * tileSize, posY * tileSize, "Items", obj_vendor_sight);
-	instance_create_layer((posX + 4) * tileSize, posY * tileSize, "Items", obj_vendor_support);
-			
-	instance_create_layer((posX + 3) * tileSize, (posY + 2) * tileSize, "Items", obj_lantern);
+	scr_level_generateSpawn(obj_player_0); // Generate the first enemy spawn
 	
-	instance_create_layer(x + tileSize / 2, y + tileSize / 2, "Entities", obj_player_0);
-	if (multiplayer) instance_create_layer(x + tileSize / 2, y + tileSize / 2, "Entities", obj_player_1);
+	scr_level_randomizePos();
+	scr_level_setGridPos();
+	
+	scr_level_generateSpawn(obj_player_1); // Generate the second enemy spawn
+	
+	scr_level_randomizePos();
+	scr_level_setGridPos();
+	
+	scr_level_generateTreasure();
 }

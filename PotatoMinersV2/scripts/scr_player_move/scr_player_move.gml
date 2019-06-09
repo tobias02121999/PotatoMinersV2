@@ -88,7 +88,10 @@ switch (inputScheme)
 				var newGridPosY = y / obj_level.tileSize;
 			
 				if (obj_level.tileID[newGridPosX, newGridPosY] <= 2)
+				{
 					x -= movementSpeed;
+					iCursorX -= movementSpeed;
+				}
 			}
 		
 			if (iMoveRight)
@@ -97,7 +100,10 @@ switch (inputScheme)
 				var newGridPosY = y / obj_level.tileSize;
 			
 				if (obj_level.tileID[newGridPosX, newGridPosY] <= 2)
+				{
 					x += movementSpeed;
+					iCursorX += movementSpeed;
+				}
 			}
 		
 			if (iMoveUp)
@@ -106,7 +112,10 @@ switch (inputScheme)
 				var newGridPosY = (y / obj_level.tileSize) - 1;
 			
 				if (obj_level.tileID[newGridPosX, newGridPosY] <= 2)
+				{
 					y -= movementSpeed;
+					iCursorY -= movementSpeed;
+				}
 			}
 		
 			if (iMoveDown)
@@ -115,7 +124,10 @@ switch (inputScheme)
 				var newGridPosY = (y / obj_level.tileSize) + 1;
 			
 				if (obj_level.tileID[newGridPosX, newGridPosY] <= 2)
+				{
 					y += movementSpeed;
+					iCursorY += movementSpeed;
+				}
 			}
 			
 			if (iMoveLeft || iMoveRight || iMoveUp || iMoveDown)

@@ -1,2 +1,0 @@
-// Randomize the seed
-randomize();
