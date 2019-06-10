@@ -56,7 +56,7 @@ if (tutorial)
 		case 7:
 			if (tutorialHasLanterned)
 			{
-				alarm[1] = 500;
+				alarm[1] = 1000;
 				tutorialStage++;
 			}
 			break;
@@ -75,7 +75,8 @@ if (tutorial)
 			
 		// Treasure
 		case 10:
-			
+			if (tutorialHasTreasured)
+				tutorialStage++;
 			break;
 	}
 }

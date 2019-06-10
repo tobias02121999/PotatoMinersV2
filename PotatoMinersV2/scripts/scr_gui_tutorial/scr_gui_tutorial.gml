@@ -113,12 +113,12 @@ switch (target.tutorialStage)
 		{
 			// Mouse + keyboard
 			case 1:
-				text = "the other stone slabs\nor vendors are used\nfor purchasing new\nitems and upgrades\nsuch as supports and\nlanterns. your current\namount of items can be\nseen in the bottom\nright corner for the\nscreen. buy a set of\nlanterns by hovering\nover the vendor with\nthe lantern icon on it\nand pressing the left\nmouse button.";
+				text = "the other stone slabs\nor vendors are used\nfor purchasing new\nitems and upgrades\nsuch as supports and\nlanterns. your current\namount of items can be\nseen in the bottom\nright corner of the\nscreen. buy a set of\nlanterns by hovering\nover the vendor with\nthe lantern icon on it\nand pressing the left\nmouse button.";
 				break;
 				
 			// Gamepad
 			case 2:
-				text = "the other stone slabs\nor vendors are used\nfor purchasing new\nitems and upgrades\nsuch as supports and\nlanterns. your current\namount of items can be\nseen in the bottom\nright corner for the\nscreen. buy a set of\nlanterns by hovering\nover the vendor with\nthe lantern icon on it\nand pressing the rt\nbutton.";
+				text = "the other stone slabs\nor vendors are used\nfor purchasing new\nitems and upgrades\nsuch as supports and\nlanterns. your current\namount of items can be\nseen in the bottom\nright corner of the\nscreen. buy a set of\nlanterns by hovering\nover the vendor with\nthe lantern icon on it\nand pressing the rt\nbutton.";
 				break;
 		}
 		break;
@@ -177,12 +177,28 @@ switch (target.tutorialStage)
 		{
 			// Mouse + keyboard
 			case 1:
-				text = "";
+				text = "to win a match of\npotato miners you\nmust find the treasure\nchest and stand on top\nof it. to complete the\ntutorial step on the\ntreasure chest.";
 				break;
 				
 			// Gamepad
 			case 2:
-				text = "";
+				text = "to win a match of\npotato miners you\nmust find the treasure\nchest and stand on top\nof it. to complete the\ntutorial step on the\ntreasure chest.";
+				break;
+		}
+		break;
+		
+	// Completed
+	case 11:
+		switch (target.inputScheme)
+		{
+			// Mouse + keyboard
+			case 1:
+				text = "you have completed the\ntutorial. you can head\nback to the main menu\nthrough the pause menu\nwhich can be opened by\npressing the escape\nkey.";
+				break;
+				
+			// Gamepad
+			case 2:
+				text = "you have completed the\ntutorial. you can head\nback to the main menu\nthrough the pause menu\nwhich can be opened by\npressing the start\nbutton.";
 				break;
 		}
 		break;

@@ -91,5 +91,5 @@ else
 	scr_level_randomizePos();
 	scr_level_setGridPos();
 	
-	scr_level_generateTreasure();
+	if (!instance_exists(obj_tutorial)) scr_level_generateTreasure();
 }

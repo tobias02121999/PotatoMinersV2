@@ -6,4 +6,5 @@ if (!other.tutorial)
 	obj_level.alarm[1] = victoryScreenDuration;
 }
 
-other.tutorialHasTreasured = true;
+if (other.tutorialStage == 10)
+	other.tutorialHasTreasured = true;

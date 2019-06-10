@@ -33,8 +33,8 @@ moveTargetX = x;
 moveTargetY = y;
 moveTargetSpeed = 1;
 
-tutorial = true;
-tutorialStage = 9;
+tutorial = false;
+tutorialStage = 0;
 
 tutorialHasMoved = false;
 tutorialHasMined = false;

@@ -26,4 +26,10 @@ supportVendor.player = player;
 var lanternVendor = instance_create_layer((posX + 3) * tileSize, (posY + 2) * tileSize, "Items", obj_lantern);
 lanternVendor.player = player;
 
-instance_create_layer(x + tileSize / 2, y + tileSize / 2, "Entities", player);
+var obj = instance_create_layer(x + tileSize / 2, y + tileSize / 2, "Entities", player);
+
+if (instance_exists(obj_tutorial))
+{
+	instance_create_layer(x - (obj_level.tileSize * 2), y + obj_level.tileSize, "Items", obj_treasure);
+	obj.tutorial = true;
+}
