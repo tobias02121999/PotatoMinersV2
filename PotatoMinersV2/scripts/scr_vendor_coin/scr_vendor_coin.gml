@@ -3,3 +3,5 @@ stone = 0;
 iron = 0;
 gold = 0;
 diamond = 0;
+
+tutorialHasSold = true;

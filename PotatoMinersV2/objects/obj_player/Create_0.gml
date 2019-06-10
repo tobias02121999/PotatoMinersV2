@@ -25,5 +25,28 @@ cursor = obj_cursor;
 
 sensitivity = 1.5;
 
+walkRotationIntensity = 25;
+walkRotationResetSpeed = 2.5;
+walkRotationDirection = 1;
+
+moveTargetX = x;
+moveTargetY = y;
+moveTargetSpeed = 1;
+
+tutorial = true;
+tutorialStage = 9;
+
+tutorialHasMoved = false;
+tutorialHasMined = false;
+tutorialHasSupported = false;
+tutorialHasBuilt = false;
+tutorialHasSold = false;
+tutorialHasBought = false;
+tutorialHasLanterned = false;
+tutorialHasCheated = false;
+tutorialHasTreasured = false;
+
+alarm[1] = 500;
+
 // Instantiate the spawn shield
 instance_create_layer(x - (obj_level.tileSize / 2), (y - (obj_level.tileSize / 2)) - obj_level.tileSize, "System", obj_shield);

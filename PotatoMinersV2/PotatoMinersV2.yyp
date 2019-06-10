@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0234760f-1904-458d-b01c-accf74ed4eb0",
+            "Value": {
+                "id": "374fc2ff-c273-4a71-98a4-8ab57dadedd4",
+                "resourcePath": "scripts\\scr_player_tutorial\\scr_player_tutorial.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "05be1561-e2e4-4331-b7fe-fc3ab5dff769",
             "Value": {
                 "id": "8839c9a7-b7ab-4ce4-96cf-b18362f096a0",
@@ -267,6 +275,22 @@
             "Value": {
                 "id": "bb5b2333-e2c3-4330-b50b-5910ef608ff1",
                 "resourcePath": "sprites\\spr_icon_materials\\spr_icon_materials.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3f221d5e-59b7-4cb3-a496-286ab698d6b1",
+            "Value": {
+                "id": "bdcd6b0e-f8a6-43cd-9965-57f5d63bbbb3",
+                "resourcePath": "scripts\\scr_gui_tutorial\\scr_gui_tutorial.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3f4a9962-960b-497e-b769-39867789eabf",
+            "Value": {
+                "id": "7c08478a-72a0-48d8-960f-e3f2d69b97a7",
+                "resourcePath": "sprites\\spr_potato_shadow\\spr_potato_shadow.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -580,6 +604,14 @@
                 "id": "85a45180-81ca-48a3-ac88-33b579d23413",
                 "resourcePath": "objects\\obj_level\\obj_level.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7ef5c259-f47f-446e-820b-da583affe767",
+            "Value": {
+                "id": "a720b3a8-6deb-45ce-95fb-0a63d2ef9b54",
+                "resourcePath": "sprites\\spr_tutorial_message\\spr_tutorial_message.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1119,6 +1151,14 @@
             }
         },
         {
+            "Key": "e53032fa-2ee7-42a3-96e1-7a170da2c21b",
+            "Value": {
+                "id": "b2025e81-d49d-459f-9997-6dee4aca7af0",
+                "resourcePath": "scripts\\scr_player_suicide\\scr_player_suicide.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e5d2f415-30e3-4a35-8296-a74102837ba6",
             "Value": {
                 "id": "de0af0dd-ebd8-4c8f-a20c-b35d4e6abe79",
@@ -1233,6 +1273,8 @@
         "27393cc7-362a-4fb1-b07c-4cebf53fcb7f",
         "582d877c-f9f3-429a-9fe0-cc9978c137f7",
         "bf2a2f72-7b2e-402c-b6ed-50f9055482a7",
+        "e53032fa-2ee7-42a3-96e1-7a170da2c21b",
+        "0234760f-1904-458d-b01c-accf74ed4eb0",
         "a2a47a1e-e1ea-4412-908a-8df123f8e8a6",
         "b5599533-2558-44ce-863d-e44b8d30405d",
         "73153323-b97c-4c4d-bfc6-c841c9c41911",
@@ -1259,7 +1301,8 @@
         "069b13ed-23b6-423e-8fb8-b40a3edfde4f",
         "af9c6d13-b375-445b-b7c9-70394b6e7581",
         "81b62800-e0f5-4836-a027-d4799e38f3ea",
-        "5ebbcdc5-ff51-44bf-910f-9dec21761949"
+        "5ebbcdc5-ff51-44bf-910f-9dec21761949",
+        "3f221d5e-59b7-4cb3-a496-286ab698d6b1"
     ],
     "tutorial": ""
 }

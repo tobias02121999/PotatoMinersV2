@@ -4,3 +4,4 @@ event_inherited();
 // Initialize the vendor variables
 vendorScript = scr_vendor_coin;
 vendorDialog.image_index = 4;
+tutorialUnlockStage = 5;

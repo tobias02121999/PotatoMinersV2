@@ -1,5 +1,5 @@
 // Check for collision with the player
-if (place_meeting(x, y, obj_cursor) && !activated && player.iMine)
+if (place_meeting(x, y, obj_cursor) && !activated && player.iMine && (!player.tutorial || player.tutorialStage == tutorialUnlockStage))
 {
 	if (player.coin >= cost)
 	{

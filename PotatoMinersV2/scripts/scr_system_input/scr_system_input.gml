@@ -34,6 +34,8 @@ switch (inputScheme)
 		iCursorY = window_view_mouse_get_y(1);
 		
 		iShowSheet = keyboard_check(vk_tab);
+		
+		iSuicide = keyboard_check_pressed(ord("R"));
 		break;
 		
 	// The player 2 (1) input scheme (gamepad)
@@ -57,5 +59,7 @@ switch (inputScheme)
 		iCursorY += gamepad_axis_value(0, gp_axisrv) * sensitivity;
 		
 		iShowSheet = gamepad_button_check(0, gp_select);
+		
+		iSuicide = gamepad_button_check(0, gp_face4);
 		break;
 }

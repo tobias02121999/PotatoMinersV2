@@ -10,4 +10,6 @@ if (iBuild && cursor.inRange && ((tile <= 2 && stone >= 2) || (tile == 3 && ston
 		stone -= 2;
 	else
 		stone -= 1;
+		
+	tutorialHasBuilt = true;
 }

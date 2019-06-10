@@ -11,6 +11,8 @@ if (iMine && cursor.inRange)
 			{
 				case 0: // Stone
 					stone++;
+					
+					tutorialHasMined = true;
 					break;
 					
 				case 2: // Iron
@@ -37,7 +39,8 @@ if (iMine && cursor.inRange)
 			var posX = cursor.gridPosX * obj_level.tileSize;
 			var posY = cursor.gridPosY * obj_level.tileSize;
 			
-			instance_create_layer(posX, posY, "Items", obj_collapse);
+			var collapse = instance_create_layer(posX, posY, "Items", obj_collapse);
+			if (tutorial) collapse.alarm[0] = 0;
 			
 			obj_level.tileID[cursor.gridPosX, cursor.gridPosY] = round(random_range(1, 2));
 		}

@@ -15,5 +15,11 @@ if (instance_exists(target))
 	var yPos = 46;
 
 	if (target.iShowSheet)
+	{
 		draw_sprite_ext(spr_levelSheet, 0, xPos, yPos, 3, 3, 0, c_white, 1);
+		target.tutorialHasCheated = true;
+	}
+		
+	if (target.tutorial)
+		scr_gui_tutorial();
 }
