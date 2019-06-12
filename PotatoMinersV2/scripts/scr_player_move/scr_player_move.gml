@@ -71,6 +71,9 @@ if (alarm[0] <= 0)
 		walkRotationDirection *= -1;
 		
 		tutorialHasMoved = true;
+		
+		audio_sound_pitch(snd_footstep, random_range(.5, 1.25));
+		audio_play_sound(snd_footstep, 0, false);
 				
 		alarm[0] = movementCooldown;
 	}

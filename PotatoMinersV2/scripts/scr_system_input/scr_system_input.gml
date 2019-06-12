@@ -7,10 +7,10 @@ switch (inputScheme)
 	case 0:
 		iMenuLeft = keyboard_check(vk_left) || (gamepad_axis_value(0, gp_axislh) < 0);
 		iMenuRight = keyboard_check(vk_right) || (gamepad_axis_value(0, gp_axislh) > 0);
-		iMenuUp = keyboard_check(vk_up) || (gamepad_axis_value(0, gp_axislv) < 0);
-		iMenuDown = keyboard_check(vk_down) || (gamepad_axis_value(0, gp_axislv) > 0);
+		iMenuUp = keyboard_check(vk_up) || keyboard_check(ord("W")) || (gamepad_axis_value(0, gp_axislv) < 0);
+		iMenuDown = keyboard_check(vk_down) || keyboard_check(ord("S")) || (gamepad_axis_value(0, gp_axislv) > 0);
 		
-		iMenuConfirm = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1);
+		iMenuConfirm = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(0, gp_face1);
 		
 		iMenuPause = keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(0, gp_start);
 		break;

@@ -3,6 +3,9 @@ if (iSupport && cursor.inRange && supports >= 1 && !place_meeting(cursor.x, curs
 {
 	instance_create_layer(cursor.x, cursor.y, "Items", obj_support);
 	
+	audio_sound_pitch(snd_support, random_range(.5, 1.25));
+	audio_play_sound(snd_support, 0, false);
+	
 	tutorialHasSupported = true;
 	supports--;
 }

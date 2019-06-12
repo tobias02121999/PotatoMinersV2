@@ -1,6 +1,12 @@
 // Generate a player spawn
 var player = argument0;
 
+while (!((gridPosX >= 4 && gridPosX <= gridSize - 4) && (gridPosY >= 4 && gridPosY <= gridSize - 4)))
+{
+	scr_level_randomizePos();
+	scr_level_setGridPos();
+}
+
 var posX = gridPosX - 2;
 var posY = gridPosY - 2;
 var width = 5;

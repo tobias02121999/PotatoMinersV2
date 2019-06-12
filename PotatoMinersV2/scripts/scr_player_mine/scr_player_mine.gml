@@ -42,6 +42,9 @@ if (iMine && cursor.inRange)
 			var collapse = instance_create_layer(posX, posY, "Items", obj_collapse);
 			if (tutorial) collapse.alarm[0] = 0;
 			
+			audio_sound_pitch(snd_mine, random_range(.5, 1.25));
+			audio_play_sound(snd_mine, 0, false);
+			
 			obj_level.tileID[cursor.gridPosX, cursor.gridPosY] = round(random_range(1, 2));
 		}
 	}

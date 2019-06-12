@@ -3,4 +3,4 @@ event_inherited();
 
 // Initialize the vendor variables
 vendorScript = scr_vendor_pickaxe;
-originalCost = 125;
+originalCost = 50;

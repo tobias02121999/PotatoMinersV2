@@ -11,5 +11,8 @@ if (iBuild && cursor.inRange && ((tile <= 2 && stone >= 2) || (tile == 3 && ston
 	else
 		stone -= 1;
 		
+	audio_sound_pitch(snd_wall, random_range(.5, 1.25));
+	audio_play_sound(snd_wall, 0, false);
+		
 	tutorialHasBuilt = true;
 }

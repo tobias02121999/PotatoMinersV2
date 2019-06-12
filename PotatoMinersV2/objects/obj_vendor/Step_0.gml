@@ -9,6 +9,9 @@ if (place_meeting(x, y, obj_cursor) && !activated && player.iMine && (!player.tu
 			coin -= other.cost; // Pay for the vendor with coins
 		}
 		
+		audio_sound_pitch(snd_vendor, random_range(.5, 1.25));
+		audio_play_sound(snd_vendor, 0, false);
+		
 		activated = true;	
 	}
 }

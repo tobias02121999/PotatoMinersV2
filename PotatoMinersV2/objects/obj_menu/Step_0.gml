@@ -10,6 +10,9 @@ if (iMenuUp && !inputReceived)
 	else
 		buttonSelected = buttonAmount - 1;
 		
+	audio_sound_pitch(snd_select, random_range(.5, 1.25));
+	audio_play_sound(snd_select, 0, false);
+		
 	inputReceived = true;
 }
 
@@ -20,6 +23,9 @@ if (iMenuDown && !inputReceived)
 	else
 		buttonSelected = 0;
 		
+	audio_sound_pitch(snd_select, random_range(.5, 1.25));
+	audio_play_sound(snd_select, 0, false);
+		
 	inputReceived = true;
 }
 
@@ -28,4 +34,9 @@ if (!iMenuUp && !iMenuDown)
 	
 // Confirm the selected button and run the appropriate menu script
 if (iMenuConfirm)
+{
+	audio_sound_pitch(snd_confirm, random_range(.5, 1.25));
+	audio_play_sound(snd_confirm, 0, false);
+	
 	script_execute(buttonScript[buttonSelected]);
+}
