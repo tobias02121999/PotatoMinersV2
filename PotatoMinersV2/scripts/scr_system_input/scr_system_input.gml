@@ -5,6 +5,8 @@ switch (inputScheme)
 {
 	// The menu input scheme
 	case 0:
+		gamepad_set_axis_deadzone(0, .5); // Set the axis deadzone (threshold)
+	
 		iMenuLeft = keyboard_check(vk_left) || (gamepad_axis_value(0, gp_axislh) < 0);
 		iMenuRight = keyboard_check(vk_right) || (gamepad_axis_value(0, gp_axislh) > 0);
 		iMenuUp = keyboard_check(vk_up) || keyboard_check(ord("W")) || (gamepad_axis_value(0, gp_axislv) < 0);
@@ -39,9 +41,7 @@ switch (inputScheme)
 		break;
 		
 	// The player 2 (1) input scheme (gamepad)
-	case 2:
-		gamepad_set_axis_deadzone(0, .25); // Set the axis deadzone (threshold)
-		
+	case 2:		
 		iMoveLeft = (gamepad_axis_value(0, gp_axislh) < 0);
 		iMoveRight = (gamepad_axis_value(0, gp_axislh) > 0);
 		iMoveUp = (gamepad_axis_value(0, gp_axislv) < 0);

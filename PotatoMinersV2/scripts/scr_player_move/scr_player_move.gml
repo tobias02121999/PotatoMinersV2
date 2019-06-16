@@ -1,6 +1,22 @@
 // Move the player around
 if (alarm[0] <= 0)
 {
+	var speedX = 0;
+	var speedY = 0;
+	
+	if (iMoveLeft)
+		speedX = -1;
+	
+	if (iMoveRight)
+		speedX = 1;
+		
+	if (iMoveUp)
+		speedY = -1
+		
+	if (iMoveDown)
+		speedY = 1;
+	
+	/*
 	if (iMoveLeft)
 	{
 		var newGridPosX = (x / obj_level.tileSize) - 1;
@@ -56,9 +72,25 @@ if (alarm[0] <= 0)
 				iCursorY += movementSpeed;
 		}
 	}
+	*/
 			
 	if (iMoveLeft || iMoveRight || iMoveUp || iMoveDown)
 	{
+		var newGridPosX = (x / obj_level.tileSize) + speedX;
+		var newGridPosY = (y / obj_level.tileSize) + speedY;
+		
+		if (obj_level.tileID[newGridPosX, newGridPosY] <= 2)
+		{
+			moveTargetX += speedX * movementSpeed;
+			moveTargetY += speedY * movementSpeed;
+			
+			if (inputScheme == 2)
+			{
+				iCursorX += speedX * movementSpeed;
+				iCursorY += speedY * movementSpeed;
+			}
+		}
+		
 		repeat (10)
 		{
 			var posX = xprevious + random_range(-4, 4);
