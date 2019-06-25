@@ -46,6 +46,9 @@ tutorialHasLanterned = false;
 tutorialHasCheated = false;
 tutorialHasTreasured = false;
 
+image_xscale = .5;
+image_yscale = .5;
+
 alarm[1] = 500;
 
 // Instantiate the spawn shield
