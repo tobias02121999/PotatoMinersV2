@@ -1,13 +1,17 @@
 // Check for collision with the player
-if (place_meeting(x, y, obj_cursor) && !activated && player.iMine && (!player.tutorial || player.tutorialStage == tutorialUnlockStage))
+if (place_meeting(x, y, obj_cursor))
 {
-	if (player.coin >= cost)
+	if (!activated && player.iMine && (!player.tutorial || player.tutorialStage == tutorialUnlockStage) && player.coin >= cost[vendorMenu.image_index])
 	{
 		with (player) 
 		{
-			script_execute(other.vendorScript); // Run the vendor script
-			coin -= other.cost; // Pay for the vendor with coins
+			script_execute(other.vendorScript[other.vendorMenu.image_index]); // Run the vendor script
+			coin -= other.cost[other.vendorMenu.image_index]; // Pay for the vendor with coins
 		}
+		
+		// Multiply the cost for future purchases
+		if (multiplyCost)
+			cost[other.vendorMenu.image_index] *= 2;
 		
 		audio_sound_pitch(snd_vendor, random_range(.5, 1.25));
 		audio_play_sound(snd_vendor, 0, false);
@@ -22,5 +26,7 @@ if (!player.iMine)
 selected = (place_meeting(x, y, obj_cursor))
 
 // Update the vendor dialog variables
-vendorDialog.cost = cost;
+vendorDialog.cost = cost[vendorMenu.image_index];
+
 vendorDialog.visible = selected;
+vendorMenu.visible = selected;

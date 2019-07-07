@@ -8,7 +8,8 @@
         "20e6469a-1dde-4b6e-85a9-7811f8f4bad0",
         "a1925dac-6e8d-4b81-981d-5c7c104200ed",
         "6b7cd8a6-1178-41c3-a132-cb04d5500073",
-        "4f8835bd-9328-43f3-82ac-086c8cbe4c0a"
+        "4f8835bd-9328-43f3-82ac-086c8cbe4c0a",
+        "768ef75e-d87f-4595-bace-0806faf17bc6"
     ],
     "filterType": "GMScript",
     "folderName": "Vendor",

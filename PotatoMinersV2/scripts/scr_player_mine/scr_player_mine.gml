@@ -3,27 +3,30 @@ if (iMine && cursor.inRange)
 {
 	if ((cursor.gridPosX >= obj_level.gridStart && cursor.gridPosX <= obj_level.gridEnd) &&
 		(cursor.gridPosY >= obj_level.gridStart && cursor.gridPosY <= obj_level.gridEnd) &&
-		obj_level.tileID[cursor.gridPosX, cursor.gridPosY] >= 3)
+		obj_level.tileID[cursor.gridPosX, cursor.gridPosY] >= 4)
 	{
-		if (pickaxe >= obj_level.tileID[cursor.gridPosX, cursor.gridPosY] - 3 && obj_level.tileID[cursor.gridPosX, cursor.gridPosY] != 4)
+		if (pickaxe >= obj_level.tileID[cursor.gridPosX, cursor.gridPosY] - 5 && obj_level.tileID[cursor.gridPosX, cursor.gridPosY] != 5)
 		{
-			switch (obj_level.tileID[cursor.gridPosX, cursor.gridPosY] - 3)
+			switch (obj_level.tileID[cursor.gridPosX, cursor.gridPosY] - 4)
 			{
 				case 0: // Stone
 					stone++;
-					
 					tutorialHasMined = true;
 					break;
 					
-				case 2: // Iron
+				case 2: // Coal
+					coal++;
+					break;
+					
+				case 3: // Iron
 					iron++;
 					break;
 					
-				case 3: // Gold
+				case 4: // Gold
 					gold++;
 					break;
 					
-				case 4: // Diamond
+				case 5: // Diamond
 					diamond++;
 					break;
 			}
@@ -45,7 +48,9 @@ if (iMine && cursor.inRange)
 			audio_sound_pitch(snd_mine, random_range(.5, 1.25));
 			audio_play_sound(snd_mine, 0, false);
 			
-			obj_level.tileID[cursor.gridPosX, cursor.gridPosY] = round(random_range(1, 2));
+			with (obj_level) scr_level_placeTile(other.cursor.gridPosX, other.cursor.gridPosY, 1, 2);
+			
+			pickaxeRotation = pickaxeRotationRange;
 		}
 	}
 }

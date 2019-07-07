@@ -1,11 +1,20 @@
 // Initialize the vendor variables
 activated = false;
-vendorScript = noone;
-cost = 0;
+
+vendorScript[0] = noone;
+
+cost[0] = 0;
+
 selected = false;
-vendorDialog = instance_create_layer(x + (sprite_width / 2), (y + (sprite_width / 2)) - 10, "UI", obj_vendorDialog);
 player = obj_player;
 tutorialUnlockStage = -1;
 
-image_xscale = .25;
-image_yscale = .25;
+vendorDialog = instance_create_layer(x + 8, y - 28, "UI", obj_vendorDialog);
+
+vendorMenu = instance_create_layer(x + 7.5, y - 14, "UI", obj_vendorMenu);
+vendorMenu.vendor = self.id;
+
+multiplyCost = false;
+
+image_xscale = .5;
+image_yscale = .5;

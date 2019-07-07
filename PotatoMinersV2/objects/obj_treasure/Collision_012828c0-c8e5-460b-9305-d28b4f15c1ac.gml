@@ -1,5 +1,5 @@
 // Announce the winner
-if (!other.tutorial)
+if (!other.tutorial && !obj_camera.gameOver)
 {
 	obj_camera.winner = 0;
 	obj_camera.gameOver = true;

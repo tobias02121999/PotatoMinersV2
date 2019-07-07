@@ -25,7 +25,7 @@ repeat (10)
 				// Set the current position on the grid of the level object
 				scr_level_setGridPos();
 			
-				currentOreTile = choose(5, 5, 5, 6, 6, 7);
+				currentOreTile = choose(6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 8, 8, 9);
 		
 				// Randomize the unique tile ID of the current tile
 				scr_level_placeTile(gridPosX, gridPosY, currentOreTile, currentOreTile); // Floor tiles

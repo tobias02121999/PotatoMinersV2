@@ -3,15 +3,15 @@ buttonSprite[0] = spr_button_play;
 
 buttonScript[0] = scr_menu_play;
 
-buttonStartX = 480;
-buttonStartY = 270;
+buttonStartX = 960;
+buttonStartY = 540;
 
 buttonSpacingHorizontal = 0;
-buttonSpacingVertical = 72;
+buttonSpacingVertical = 144;
 
 buttonSelected = 0;
 
 inputReceived = false;
 
-image_xscale = 3;
-image_yscale = 3;
+image_xscale = 6;
+image_yscale = 6;

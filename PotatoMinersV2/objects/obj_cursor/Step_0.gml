@@ -1,14 +1,3 @@
-// Move the cursor
-/*
-var dir = target.rotation;
-
-var lenX = lengthdir_x(distance, dir);
-var lenY = lengthdir_y(distance, dir);
-	
-x = target.x + lenX;
-y = target.y + lenY;
-*/
-
 // Set the position of the cursor on the grid
 gridPosX = clamp(x / obj_level.tileSize, 0, obj_level.gridSize - 1);
 gridPosY = clamp(y / obj_level.tileSize, 0, obj_level.gridSize - 1);

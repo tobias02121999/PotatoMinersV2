@@ -3,9 +3,11 @@ event_inherited();
 
 // Set the cost of the coin vendor
 var stoneGain = player.stone;
-var ironGain = player.iron * 5;
-var goldGain = player.gold * 10;
-var diamondGain = player.diamond * 20;
-var totalGain = stoneGain + ironGain + goldGain + diamondGain;
+var coalGain = player.coal * 5;
+var ironGain = player.iron * 10;
+var goldGain = player.gold * 20;
+var diamondGain = player.diamond * 40;
+var totalGain = stoneGain + coalGain + ironGain + goldGain + diamondGain;
 
-cost = -totalGain;
+cost[0] = -totalGain;
+cost[1] = -totalGain;

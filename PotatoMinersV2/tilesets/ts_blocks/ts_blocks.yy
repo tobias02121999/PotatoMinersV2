@@ -749,58 +749,33 @@
         "AnimationCreationOrder": null,
         "FrameData": [
             0,
-            0,
-            1,
             1,
             2,
-            2,
-            3,
             3,
             4,
-            4,
-            5,
             5,
             6,
-            6,
             7,
-            7,
-            8,
             8,
             9,
             10,
-            10,
-            9,
-            11,
             11,
             12,
-            12,
-            13,
             13,
             14,
-            14,
-            15,
             15
         ],
-        "SerialiseFrameCount": 2
+        "SerialiseFrameCount": 1
     },
     "tile_animation_frames": [
-        {
-            "id": "816fb0c9-94ba-4cc3-bebe-76cebfe42ea6",
-            "modelName": "GMTileAnimation",
-            "mvc": "1.0",
-            "frames": [
-                9,
-                10
-            ],
-            "name": "lava"
-        }
+        
     ],
     "tile_animation_speed": 2,
     "tile_count": 16,
-    "tileheight": 8,
+    "tileheight": 16,
     "tilehsep": 0,
     "tilevsep": 0,
-    "tilewidth": 8,
+    "tilewidth": 16,
     "tilexoff": 0,
     "tileyoff": 0
 }

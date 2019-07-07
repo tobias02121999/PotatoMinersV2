@@ -23,6 +23,8 @@ switch (state)
 		scr_player_turn();
 		scr_player_animate();
 		
+		scr_player_bomb();
+		
 		if (!tutorial)
 			scr_player_suicide();
 			

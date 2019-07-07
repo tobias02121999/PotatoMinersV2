@@ -2,19 +2,24 @@
 state = "DEFAULT";
 inputScheme = 1;
 movementSpeed = obj_level.tileSize;
-movementCooldown = 8;
+movementCooldown = 10;
 rotation = 0; // Rotation in degrees (facing direction)
 gridPosX = 0;
 gridPosY = 0;
+
 coin = 0;
 pickaxe = 1;
 sight = 2;
 lanterns = 0;
 supports = 5;
+bombs = 0;
+
 stone = 0;
+coal = 0;
 iron = 0;
 gold = 0;
 diamond = 0;
+
 spawnX = x;
 spawnY = y;
 
@@ -23,7 +28,7 @@ iCursorY = y;
 
 cursor = obj_cursor;
 
-sensitivity = 1.5;
+sensitivity = 3;
 
 walkRotationIntensity = 25;
 walkRotationResetSpeed = 2.5;
@@ -31,7 +36,16 @@ walkRotationDirection = 1;
 
 moveTargetX = x;
 moveTargetY = y;
-moveTargetSpeed = 1;
+moveTargetSpeed = 2;
+
+pickaxeRotation = 0;
+pickaxeRotationSpeed = 10;
+pickaxeRotationRange = 75;
+
+spriteBody = spr_potato_body_0;
+spriteEyes = choose(spr_potato_eyes_0, spr_potato_eyes_1, spr_potato_eyes_2, spr_potato_eyes_3);
+spriteNose = choose(spr_potato_nose_0, spr_potato_nose_1, spr_potato_nose_2);
+spriteHair = choose(spr_potato_hair_0, spr_potato_hair_1, spr_potato_hair_2);
 
 tutorial = false;
 tutorialStage = 0;
@@ -45,9 +59,6 @@ tutorialHasBought = false;
 tutorialHasLanterned = false;
 tutorialHasCheated = false;
 tutorialHasTreasured = false;
-
-image_xscale = .5;
-image_yscale = .5;
 
 alarm[1] = 500;
 

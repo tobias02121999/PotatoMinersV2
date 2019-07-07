@@ -1,5 +1,7 @@
 // Initialize the support variables
 range = obj_level.tileSize;
+image_xscale = 1;
+image_yscale = image_xscale;
 
 // Remove nearby collapses
 if (instance_exists(obj_collapse))

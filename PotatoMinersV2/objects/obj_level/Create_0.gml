@@ -1,13 +1,12 @@
 // Initialize the level variables
-multiplayer = true;
 genStage = 0;
 
-currentOreTile = choose(5, 5, 5, 6, 6, 7);
+currentOreTile = choose(6, 6, 6, 7, 7, 8);
 oreChunkSize = 5;
 
-oreAmount = 750;
+oreAmount = 1000;
 
-tileSize = 8; // Size of a single tile in pixels
+tileSize = 16; // Size of a single tile in pixels
 gridSize = round(room_width div tileSize); // The size of both the width and height of the grid
 
 depth = 200; // Set the depth of the level tiles
@@ -38,7 +37,7 @@ for (var xx = 0; xx < gridSize; xx++)
 	for (var yy = 0; yy < gridSize; yy++)	
 	{
 		// Initialize the unique tileID for the selected tile
-		tileID[xx, yy] = 3; // Wall by default
+		tileID[xx, yy] = 4; // Wall by default
 	}
 }
 

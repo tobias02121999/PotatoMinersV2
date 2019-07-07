@@ -1,5 +1,5 @@
 // Place a lantern on the cursor location
-if (iLantern && cursor.inRange && lanterns >= 1 && !place_meeting(x, y, obj_lantern))
+if (iLantern && cursor.inRange && lanterns >= 1 && !place_meeting(cursor.x + 8, cursor.y + 8, obj_lantern) && !place_meeting(cursor.x + 8, cursor.y + 8, obj_support) && obj_level.tileID[cursor.gridPosX, cursor.gridPosY] <= 3)
 {
 	instance_create_layer(cursor.x, cursor.y, "Items", obj_lantern);
 	

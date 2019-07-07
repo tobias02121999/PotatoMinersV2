@@ -1,5 +1,5 @@
 // Place a lantern on the player location
-if (iSupport && cursor.inRange && supports >= 1 && !place_meeting(cursor.x, cursor.y, obj_support))
+if (iSupport && cursor.inRange && supports >= 1 && !place_meeting(cursor.x + 8, cursor.y + 8, obj_support) && !place_meeting(cursor.x + 8, cursor.y + 8, obj_lantern) && obj_level.tileID[cursor.gridPosX, cursor.gridPosY] <= 3)
 {
 	instance_create_layer(cursor.x, cursor.y, "Items", obj_support);
 	

@@ -7,8 +7,6 @@ switch (inputScheme)
 	case 0:
 		gamepad_set_axis_deadzone(0, .5); // Set the axis deadzone (threshold)
 	
-		iMenuLeft = keyboard_check(vk_left) || (gamepad_axis_value(0, gp_axislh) < 0);
-		iMenuRight = keyboard_check(vk_right) || (gamepad_axis_value(0, gp_axislh) > 0);
 		iMenuUp = keyboard_check(vk_up) || keyboard_check(ord("W")) || (gamepad_axis_value(0, gp_axislv) < 0);
 		iMenuDown = keyboard_check(vk_down) || keyboard_check(ord("S")) || (gamepad_axis_value(0, gp_axislv) > 0);
 		
@@ -30,7 +28,7 @@ switch (inputScheme)
 		iLantern = keyboard_check_pressed(vk_control);
 		iSupport = keyboard_check_pressed(vk_shift);
 		
-		iBomb = keyboard_check_pressed(vk_tab);
+		iBomb = keyboard_check_pressed(vk_alt);
 		
 		iCursorX = window_view_mouse_get_x(1);
 		iCursorY = window_view_mouse_get_y(1);
@@ -38,6 +36,9 @@ switch (inputScheme)
 		iShowSheet = keyboard_check(vk_tab);
 		
 		iSuicide = keyboard_check_pressed(ord("R"));
+		
+		iVendorLeft = keyboard_check_pressed(ord("Q"));
+		iVendorRight = keyboard_check_pressed(ord("E"));
 		break;
 		
 	// The player 2 (1) input scheme (gamepad)
@@ -53,7 +54,7 @@ switch (inputScheme)
 		iLantern = gamepad_button_check_pressed(0, gp_shoulderl);
 		iSupport = gamepad_button_check_pressed(0, gp_shoulderr);
 		
-		iBomb = false;
+		iBomb = gamepad_button_check_pressed(0, gp_stickl);
 		
 		iCursorX += gamepad_axis_value(0, gp_axisrh) * sensitivity;
 		iCursorY += gamepad_axis_value(0, gp_axisrv) * sensitivity;
@@ -61,5 +62,8 @@ switch (inputScheme)
 		iShowSheet = gamepad_button_check(0, gp_select);
 		
 		iSuicide = gamepad_button_check(0, gp_face4);
+		
+		iVendorLeft = gamepad_button_check_pressed(0, gp_padl);
+		iVendorRight = gamepad_button_check_pressed(0, gp_padr);
 		break;
 }

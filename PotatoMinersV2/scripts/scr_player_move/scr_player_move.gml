@@ -15,71 +15,13 @@ if (alarm[0] <= 0)
 		
 	if (iMoveDown)
 		speedY = 1;
-	
-	/*
-	if (iMoveLeft)
-	{
-		var newGridPosX = (x / obj_level.tileSize) - 1;
-		var newGridPosY = y / obj_level.tileSize;
-			
-		if (obj_level.tileID[newGridPosX, newGridPosY] <= 2)
-		{
-			moveTargetX -= movementSpeed;
-			
-			if (inputScheme == 2)
-				iCursorX -= movementSpeed;
-		}
-	}
-		
-	if (iMoveRight)
-	{
-		var newGridPosX = (x / obj_level.tileSize) + 1;
-		var newGridPosY = y / obj_level.tileSize;
-			
-		if (obj_level.tileID[newGridPosX, newGridPosY] <= 2)
-		{
-			moveTargetX += movementSpeed;
-			
-			if (inputScheme == 2)
-				iCursorX += movementSpeed;
-		}
-	}
-		
-	if (iMoveUp)
-	{
-		var newGridPosX = x / obj_level.tileSize;
-		var newGridPosY = (y / obj_level.tileSize) - 1;
-			
-		if (obj_level.tileID[newGridPosX, newGridPosY] <= 2)
-		{
-			moveTargetY -= movementSpeed;
-			
-			if (inputScheme == 2)
-				iCursorY -= movementSpeed;
-		}
-	}
-		
-	if (iMoveDown)
-	{
-		var newGridPosX = x / obj_level.tileSize;
-		var newGridPosY = (y / obj_level.tileSize) + 1;
-			
-		if (obj_level.tileID[newGridPosX, newGridPosY] <= 2)
-		{
-			moveTargetY += movementSpeed;
-			
-			if (inputScheme == 2)
-				iCursorY += movementSpeed;
-		}
-	}
-	*/
 			
 	if (iMoveLeft || iMoveRight || iMoveUp || iMoveDown)
 	{
 		var newGridPosX = (x / obj_level.tileSize) + speedX;
 		var newGridPosY = (y / obj_level.tileSize) + speedY;
 		
-		if (obj_level.tileID[newGridPosX, newGridPosY] <= 2)
+		if (obj_level.tileID[newGridPosX, newGridPosY] <= 3)
 		{
 			moveTargetX += speedX * movementSpeed;
 			moveTargetY += speedY * movementSpeed;

@@ -62,3 +62,9 @@ else
 	x = moveTargetX;
 	y = moveTargetY;
 }
+
+// Reset the players pickaxe rotation
+if (pickaxeRotation >= pickaxeRotationSpeed)
+	pickaxeRotation -= pickaxeRotationSpeed;
+else
+	pickaxeRotation = 0;

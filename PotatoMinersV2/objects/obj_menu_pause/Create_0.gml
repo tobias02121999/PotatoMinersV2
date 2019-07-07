@@ -10,4 +10,4 @@ buttonScript[0] = scr_menu_resume;
 buttonScript[1] = scr_menu_restart;
 buttonScript[2] = scr_menu_return;
 
-buttonStartY = 200;
+buttonStartY = 400;

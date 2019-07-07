@@ -17,9 +17,6 @@ if (surface_exists(surface))
 	{
 		var size = sight * obj_level.tileSize;
 	
-		draw_set_alpha(0);
-		draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), (size * .75) + random_range(-1, 1), false);
-	
 		draw_set_alpha(.75);
 		draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), size + random_range(-1, 1), false);
 	}
@@ -27,10 +24,16 @@ if (surface_exists(surface))
 	with (obj_lantern)
 	{	
 		draw_set_alpha(1);
-		draw_circle((x + (obj_level.tileSize / 2)) + random_range(-1, 1), (y + (obj_level.tileSize / 2)) + random_range(-1, 1), 28 + random_range(-1, 1), false);
+		draw_circle((x + (obj_level.tileSize / 2)) + random_range(-1, 1), (y + (obj_level.tileSize / 2)) + random_range(-1, 1), 65 + random_range(-1, 1), false);
+	}
 	
-		draw_set_alpha(1);
-		draw_circle((x + (obj_level.tileSize / 2)) + random_range(-1, 1), (y + (obj_level.tileSize / 2)) + random_range(-1, 1), 38 + random_range(-1, 1), false);
+	if (instance_exists(obj_explosion))
+	{
+		with (obj_explosion)
+		{	
+			draw_set_alpha(1);
+			draw_circle((x + (obj_level.tileSize / 2)), (y + (obj_level.tileSize / 2)), 50 + random_range(0, 50), false);
+		}
 	}
 	
 	with (obj_lava)
