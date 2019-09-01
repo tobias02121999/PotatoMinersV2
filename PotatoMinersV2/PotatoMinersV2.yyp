@@ -1495,6 +1495,14 @@
             }
         },
         {
+            "Key": "f0908b84-763e-46c3-af83-f0eb01b06b93",
+            "Value": {
+                "id": "09e6d1d4-8e30-4da2-a9d4-109d6cee4c7f",
+                "resourcePath": "scripts\\scr_camera_view\\scr_camera_view.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f0e92b2a-dd32-48c2-a763-1ab1b7cef64a",
             "Value": {
                 "id": "b0a853f5-8e29-4201-a801-8d94b4fd7e7c",
@@ -1627,7 +1635,8 @@
         "af9c6d13-b375-445b-b7c9-70394b6e7581",
         "81b62800-e0f5-4836-a027-d4799e38f3ea",
         "5ebbcdc5-ff51-44bf-910f-9dec21761949",
-        "3f221d5e-59b7-4cb3-a496-286ab698d6b1"
+        "3f221d5e-59b7-4cb3-a496-286ab698d6b1",
+        "f0908b84-763e-46c3-af83-f0eb01b06b93"
     ],
     "tutorial": ""
 }

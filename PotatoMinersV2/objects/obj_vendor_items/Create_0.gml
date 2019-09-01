@@ -8,6 +8,6 @@ vendorScript[2] = scr_vendor_bomb;
 
 cost[0] = 35;
 cost[1] = 5;
-cost[2] = 50;
+cost[2] = 10;
 
 tutorialUnlockStage = 6;

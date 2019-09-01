@@ -15,16 +15,22 @@ if (surface_exists(surface))
 
 	with (obj_player)
 	{
-		var size = sight * obj_level.tileSize;
+		if (view_current == 1)
+		{
+			var size = sight * obj_level.tileSize;
 	
-		draw_set_alpha(.75);
-		draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), size + random_range(-1, 1), false);
+			draw_set_alpha(.75);
+			draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), size + random_range(-1, 1), false);
+		}
 	}
 
 	with (obj_lantern)
 	{	
-		draw_set_alpha(1);
-		draw_circle((x + (obj_level.tileSize / 2)) + random_range(-1, 1), (y + (obj_level.tileSize / 2)) + random_range(-1, 1), 65 + random_range(-1, 1), false);
+		if (discovered[view_current])
+		{
+			draw_set_alpha(1);
+			draw_circle((x + (obj_level.tileSize / 2)) + random_range(-1, 1), (y + (obj_level.tileSize / 2)) + random_range(-1, 1), 65 + random_range(-1, 1), false);
+		}
 	}
 	
 	if (instance_exists(obj_explosion))

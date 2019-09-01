@@ -22,4 +22,7 @@ for (var xx = startPosX; xx <= ((startPosX + width) - tileSize); xx += tileSize)
 
 instance_create_layer(x, y, "Particles", obj_explosion);
 
+obj_camera_0.alarm[0] = 30;
+obj_camera_1.alarm[0] = 30;
+
 instance_destroy();

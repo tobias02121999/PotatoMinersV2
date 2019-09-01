@@ -1,2 +1,2 @@
 // Cheat in coins
-coin += 10;
+coin += 100;

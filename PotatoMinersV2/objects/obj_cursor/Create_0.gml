@@ -8,3 +8,4 @@ target = obj_player;
 tpToSpawn = false;
 mouseX = 0;
 mouseY = 0;
+supportCountAlpha = 0;

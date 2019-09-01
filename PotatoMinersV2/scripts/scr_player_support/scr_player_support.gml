@@ -6,6 +6,8 @@ if (iSupport && cursor.inRange && supports >= 1 && !place_meeting(cursor.x + 8, 
 	audio_sound_pitch(snd_support, random_range(.5, 1.25));
 	audio_play_sound(snd_support, 0, false);
 	
+	cursor.supportCountAlpha = 1;
+	
 	tutorialHasSupported = true;
 	supports--;
 }

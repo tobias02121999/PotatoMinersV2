@@ -7,6 +7,8 @@ rotation = 0; // Rotation in degrees (facing direction)
 gridPosX = 0;
 gridPosY = 0;
 
+playerID = 0;
+
 coin = 0;
 pickaxe = 1;
 sight = 2;
@@ -41,6 +43,13 @@ moveTargetSpeed = 2;
 pickaxeRotation = 0;
 pickaxeRotationSpeed = 10;
 pickaxeRotationRange = 75;
+
+miningCompletion = 0;
+miningSpeedStone = .065;
+miningSpeedCoal = .035;
+miningSpeedIron = .02;
+miningSpeedGold = .01;
+miningSpeedDiamond = .005;
 
 spriteBody = spr_potato_body_0;
 spriteEyes = choose(spr_potato_eyes_0, spr_potato_eyes_1, spr_potato_eyes_2, spr_potato_eyes_3);

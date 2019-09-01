@@ -2,7 +2,7 @@
 gridPosX = x / obj_level.tileSize;
 gridPosY = y / obj_level.tileSize;
 
-collapseDuration = 600;
+collapseDuration = 1000;
 alarm[0] = collapseDuration;
 
 color = c_yellow;

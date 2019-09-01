@@ -1,3 +1,6 @@
+var posXOld = x;
+var posYOld = y;
+
 // Set the position of the cursor on the grid
 gridPosX = clamp(x / obj_level.tileSize, 0, obj_level.gridSize - 1);
 gridPosY = clamp(y / obj_level.tileSize, 0, obj_level.gridSize - 1);
@@ -28,13 +31,20 @@ if (instance_exists(target))
 	inRange = (dist <= (target.sight * obj_level.tileSize))
 
 	image_index = inRange;
+
+	// Teleport the cursor to the spawn position
+	if (!tpToSpawn)
+	{
+		x = target.x;
+		y = target.y;
+	
+		tpToSpawn = true;
+	}
+	
+	if (posXOld != x || posYOld != y)
+		target.miningCompletion = 0;
 }
 
-// Teleport the cursor to the spawn position
-if (!tpToSpawn && instance_exists(target))
-{
-	x = target.x;
-	y = target.y;
-	
-	tpToSpawn = true;
-}
+// Reduce the support count alpha over time
+if (supportCountAlpha > .005)
+	supportCountAlpha -= .005;

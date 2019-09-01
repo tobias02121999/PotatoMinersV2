@@ -6,7 +6,7 @@ switch (dir)
 {
 	// Move right
 	case 0:
-		if (gridPosX + 1 <= gridEnd) // Check if there's place on the playable grid
+		if (gridPosX + 1 <= gridEnd) // C heck if there's place on the playable grid
 			x += tileSize; // Move
 		break;
 		

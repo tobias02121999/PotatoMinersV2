@@ -39,6 +39,9 @@ switch (inputScheme)
 		
 		iVendorLeft = keyboard_check_pressed(ord("Q"));
 		iVendorRight = keyboard_check_pressed(ord("E"));
+		
+		iZoomIn = mouse_wheel_up();
+		iZoomOut = mouse_wheel_down();
 		break;
 		
 	// The player 2 (1) input scheme (gamepad)
@@ -65,5 +68,8 @@ switch (inputScheme)
 		
 		iVendorLeft = gamepad_button_check_pressed(0, gp_padl);
 		iVendorRight = gamepad_button_check_pressed(0, gp_padr);
+		
+		iZoomIn = false;
+		iZoomOut = false;
 		break;
 }

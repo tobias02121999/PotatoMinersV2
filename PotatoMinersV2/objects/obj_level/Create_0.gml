@@ -1,10 +1,10 @@
 // Initialize the level variables
 genStage = 0;
 
-currentOreTile = choose(6, 6, 6, 7, 7, 8);
+currentOreTile = choose(6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 8, 8, 9);
 oreChunkSize = 5;
 
-oreAmount = 1000;
+oreAmount = 3000;
 
 tileSize = 16; // Size of a single tile in pixels
 gridSize = round(room_width div tileSize); // The size of both the width and height of the grid
@@ -47,3 +47,4 @@ alarm[0] = generationDuration; // Start the generation alarm
 // Initialize the games font
 global.Font = font_add_sprite_ext(spr_font, "0123456789abcdefghijklmnopqrstuvwxyz.", true, 2);
 draw_set_font(global.Font);
+ 
